@@ -8,10 +8,8 @@
     "private": false,
     "scripts": {
         "build": "tsup",
-        "lint": "tsc && eslint src",
-        "prettier": "prettier --write src",
-        "prettier:check": "prettier --check src",
-        "ci": "pnpm run lint && pnpm run prettier:check && pnpm run build",
+        "lint": "tsc && eslint src && prettier --check src",
+        "ci": "pnpm run lint && pnpm run build",
         "release": "pnpm run ci && changeset publish"
     },
     "keywords": [],
