@@ -3,8 +3,9 @@
     "name": "greengame-api-client",
     "version": "0.0.2",
     "description": "A REST API client for the GreenGame laboratory project.",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.mts",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
     "private": false,
     "scripts": {
         "build": "tsup",
