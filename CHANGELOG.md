@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.0.6
+
+### Patch Changes
+
+- 9528d41: Fix invalid entrypoint
+
 ## 0.0.5
 
 ### Patch Changes
