@@ -5,6 +5,7 @@
     "description": "A REST API client for the GreenGame laboratory project.",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.mts",
+    "private": false,
     "scripts": {
         "build": "tsup",
         "lint": "tsc && eslint src",
