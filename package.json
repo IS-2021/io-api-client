@@ -6,9 +6,8 @@
     "files": [
         "dist/**/*"
     ],
-    "main": "dist/index.global.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
+    "main": "dist/index.mjs",
+    "types": "dist/index.d.mts",
     "private": false,
     "scripts": {
         "build": "tsup",
