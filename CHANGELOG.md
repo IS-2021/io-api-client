@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.0.7
+
+### Patch Changes
+
+- dad06fc: Remove IIFE output
+
 ## 0.0.6
 
 ### Patch Changes
