@@ -14,7 +14,7 @@
         "build": "tsup",
         "lint": "tsc && eslint src && prettier --check src",
         "ci": "pnpm run lint && pnpm run build",
-        "release": "pnpm run ci && changeset publish"
+        "release": "pnpm run build && changeset publish"
     },
     "keywords": [],
     "author": "jkazimierczak",
