@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "greengame-api-client",
+	"version": "0.0.1",
+	"description": "A REST API client for the GreenGame laboratory project.",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"scripts": {
+		"build": "tsup",
+		"lint": "tsc && eslint src",
+		"prettier": "prettier --write src",
+		"prettier:check": "prettier --check src",
+		"ci": "pnpm run lint && pnpm run prettier:check && pnpm run build"
+	},
+	"keywords": [],
+	"author": "jkazimierczak",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"eslint": "^8.55.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.0",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"prettier": "^3.1.1",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3"
+	}
+}
