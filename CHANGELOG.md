@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.1.0
+
+### Minor Changes
+
+- 12af05f: Add initial API client
+
 ## 0.0.8
 
 ### Patch Changes

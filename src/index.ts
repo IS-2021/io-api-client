@@ -13,19 +13,19 @@ async function gameApiFetch<T>(url: string | URL, init?: RequestInit) {
 	return (await res.json()) as T;
 }
 
-export async function getUserData(): Promise<UserDataResponse> {
-	return gameApiFetch("/api/user");
+export async function getUserData() {
+	return gameApiFetch<UserDataResponse>("/api/user");
 }
 
 export async function updateUserCoins(coins: UpdateUserCoinsRequest) {
-	return gameApiFetch("/api/user/coins", {
+	return customFetch("/api/user/coins", {
 		method: "POST",
 		body: JSON.stringify(coins),
 	});
 }
 
 export async function updateRanking(data: UpdateRankingRequest) {
-	return gameApiFetch("/api/ranking", {
+	return customFetch("/api/ranking", {
 		method: "POST",
 		body: JSON.stringify(data),
 	});
