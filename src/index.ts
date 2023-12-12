@@ -1,5 +1,9 @@
 import { customFetch } from "./fetcher";
-import { type UpdateRankingRequest, type UpdateUserCoinsRequest, type UserDataResponse } from "./types";
+import {
+	type UpdateRankingRequest,
+	type UpdateUserCoinsRequest,
+	type UserDataResponse,
+} from "./types";
 
 const baseApiUrl = new URL("http://localhost:8080/");
 
