@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.0.8
+
+### Patch Changes
+
+- f474021: Change entrypoint
+
 ## 0.0.7
 
 ### Patch Changes
