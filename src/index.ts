@@ -5,7 +5,7 @@ import {
 	type UserDataResponse,
 } from "./types";
 
-async function gameApiFetch<T>(url: string | URL, init?: RequestInit) {
+async function gameApiFetch<T>(url: string, init?: RequestInit) {
 	const res = await customFetch(url, init);
 
 	return (await res.json()) as T;
