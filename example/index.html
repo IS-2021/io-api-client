@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API client example</title>
-</head>
-<body>
-    <script type="importmap">
-        {
-            "imports": {
-                "greengame-api-client": "https://unpkg.com/greengame-api-client@latest"
-            }
-        }
-    </script>
-    <script src="src/main.mjs" type="module"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>API client example</title>
+	</head>
+	<body>
+		<button id="btn-get-user-data">Get user data</button>
+		<button id="btn-update-ranking">Update ranking</button>
+		<script type="importmap">
+			{
+				"imports": {
+					"greengame-api-client": "https://unpkg.com/greengame-api-client@latest"
+				}
+			}
+		</script>
+		<script src="src/main.mjs" type="module"></script>
+	</body>
 </html>
