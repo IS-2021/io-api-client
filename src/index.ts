@@ -12,7 +12,7 @@ async function gameApiFetch<T>(url: string, init?: RequestInit) {
 }
 
 export async function getUserData() {
-	return gameApiFetch<UserDataResponse>("/api/user");
+	return gameApiFetch<UserDataResponse>("/user");
 }
 
 export async function updateUserCoins(coins: UpdateUserCoinsRequest) {
