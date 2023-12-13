@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.1.2
+
+### Patch Changes
+
+- edb6929: Fix invalid base API URL
+
 ## 0.1.1
 
 ### Patch Changes
