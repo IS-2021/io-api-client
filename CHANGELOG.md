@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.1.1
+
+### Patch Changes
+
+- 1717f56: Fix error when empty body was fetched
+
 ## 0.1.0
 
 ### Minor Changes
