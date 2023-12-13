@@ -1,0 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  greengame-api-client:
+    specifier: ^0.1.0
+    version: 0.1.0
+  typescript:
+    specifier: ^5.3.3
+    version: 5.3.3
+
+packages:
+
+  /greengame-api-client@0.1.0:
+    resolution: {integrity: sha512-bmHcd24eQpujWbwujk3Kg7OW7L/fD/D2jHXi4jx6MQsQLnqJNJmIKzBLMn3psrUqAV8YXauaUYoGRSqkJGgurg==}
+    dev: true
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
