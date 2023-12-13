@@ -1,5 +1,11 @@
 # greengame-api-client
 
+## 0.1.3
+
+### Patch Changes
+
+- 84fd955: Fix duplicated /api path
+
 ## 0.1.2
 
 ### Patch Changes
