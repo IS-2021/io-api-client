@@ -35,7 +35,7 @@ export async function customFetch(input: RequestInfo | URL, init?: RequestInit) 
 	}
 
 	try {
-		const res = await fetch(input, { ...initOptions, credentials: "include", mode: "cors" });
+		const res = await fetch(`http://localhost:8080/api${input}`, { ...initOptions, credentials: "include", mode: "cors" });
 		if (!res.ok) {
 			throw new ApiError("Bad response", res);
 		}
