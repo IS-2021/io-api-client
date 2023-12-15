@@ -11,7 +11,7 @@ class ClassUsageExample {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     const classUsageExample = new ClassUsageExample();
 
     const getUserDataButton = document.getElementById("btn-get-user-data");
@@ -25,5 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
         await updateRanking({gameID: 1, score: 100});
     });
 
-    classUsageExample.getUserData();
+    await classUsageExample.getUserData();
 });
