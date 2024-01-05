@@ -1,8 +1,11 @@
 import { customFetch } from "./fetcher";
-import {
-	type UpdateRankingRequest,
-	type UpdateUserCoinsRequest,
-	type UserDataResponse,
+import type {
+	LoadGameDataRequest,
+	LoadGameDataResponse,
+	SaveGameDataRequest,
+	UpdateRankingRequest,
+	UpdateUserCoinsRequest,
+	UserDataResponse,
 } from "./types";
 
 async function gameApiFetch<T>(url: string, init?: RequestInit) {
@@ -27,4 +30,24 @@ export async function updateRanking(data: UpdateRankingRequest) {
 		method: "POST",
 		body: JSON.stringify(data),
 	});
+}
+
+export async function saveGameData(data: SaveGameDataRequest) {
+	return customFetch("/datastorage", {
+		method: "POST",
+		body: JSON.stringify({
+			gameId: data.gameId,
+			gameDataJSON: JSON.stringify(data.gameData),
+		}),
+	});
+}
+
+export async function loadGameData({ gameId }: LoadGameDataRequest): Promise<unknown | null> {
+	const res = await gameApiFetch<LoadGameDataResponse>(`/datastorage/${gameId}`);
+
+	if (res.gameDataJSON) {
+		return JSON.parse(res.gameDataJSON) as unknown
+	}
+
+	return null;
 }
