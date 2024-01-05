@@ -42,7 +42,7 @@ export async function saveGameData(data: SaveGameDataRequest) {
 	});
 }
 
-export async function loadGameData({ gameId }: LoadGameDataRequest): Promise<unknown | null> {
+export async function loadGameData({ gameId }: LoadGameDataRequest) {
 	const res = await gameApiFetch<LoadGameDataResponse>(`/datastorage/${gameId}`);
 
 	if (res.gameDataJSON) {
