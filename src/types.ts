@@ -15,12 +15,12 @@ export type UpdateRankingRequest = {
 export type SaveGameDataRequest = {
 	gameId: number;
 	gameData: unknown;
-}
+};
 
 export type LoadGameDataRequest = {
 	gameId: number;
-}
+};
 
 export type LoadGameDataResponse = {
 	gameDataJSON: string | undefined;
-}
+};

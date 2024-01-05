@@ -46,7 +46,7 @@ export async function loadGameData({ gameId }: LoadGameDataRequest) {
 	const res = await gameApiFetch<LoadGameDataResponse>(`/datastorage/${gameId}`);
 
 	if (res.gameDataJSON) {
-		return JSON.parse(res.gameDataJSON) as unknown
+		return JSON.parse(res.gameDataJSON) as unknown;
 	}
 
 	return null;
